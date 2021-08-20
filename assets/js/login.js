@@ -57,6 +57,7 @@ $(function () {
             //快速获取表单中的数据
             data: $(this).serialize(),
             success: function (res) {
+                console.log(res.message);
                 if (res.status !== 0) {
                     return layer.msg('登录失败！');
                 }
